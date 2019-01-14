@@ -13,7 +13,7 @@
     </head>
     <body>
         $(info)
-    <from action="ActionProces" method="POST">
+    <from action="ActionProcess" method="POST">
         <input type="hidden" name="act" value="getdata"/><input type="submit" value=" Get data"/>
     </from>
     <from action="ActionProcess" method="POST">

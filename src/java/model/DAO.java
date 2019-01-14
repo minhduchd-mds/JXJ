@@ -35,8 +35,8 @@ public class DAO {
     protected Connection conn;
     public DAO(){
         try{
-            Class.forName("");
-            conn = DriverManager.getConnection("", "sa", "sa");        
+            Class.forName("org.apache.derby.jdbc.ClientDriver");
+            conn = DriverManager.getConnection("jdbc:derby://localhost:1527/Producst", "sa", "sa");        
         }catch(ClassNotFoundException | SQLException ex){
             
         }
